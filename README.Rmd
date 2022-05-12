@@ -1,11 +1,20 @@
+
 ---
 output: github_document
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
-# cpdb
+# cpdb R Package
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -16,12 +25,14 @@ This R package allows the user to get the intramolecular contacts of a specific 
 ## Installation
 Install the package
 
+``` r
 library(devtools)
 devtools::install_github("karlapenag/cpdb", build_vignettes = TRUE)
+```
 
-
+```{r setup}
 library(cpdb)
-
+```
 
 ## `get_contacts()` function
 
@@ -45,9 +56,11 @@ returns a ´plot´ of the closest residues to the target residue.
 
 ### Example
 
-`get_contacts("4q21", "A", 15, 6)`
+```{r example}
+get_contacts("4q21", "A", 15, 6)
+```
 
-
-
-`plot_closest("4q21", "A", 15, 8)`
+```{r}
+plot_closest("4q21", "A", 15, 8)
+```
 

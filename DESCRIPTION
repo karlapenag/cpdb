@@ -4,8 +4,7 @@ Title: Get residue contacts
 Version: 0.1.0
 Author: Karla Angélica Peña Guerra
 Maintainer: <karla.penaguerra@kaust.edu.sa>
-Description: Get residue contacts positions for a solved structure in PDB. Includes other functions to manipulate PDBs. Uses 'bio3d' package as an interface with PDB.
-    spaces when indenting paragraphs within the Description.
+Description: This R package allows the user to get the intramolecular contacts of a specific residue from a solved PDB protein structure. Its use is intended to researchers in genetic mutations.
 License: MIT + file LICENSE
 Imports: 
     bio3d,
@@ -19,3 +18,4 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+always_allow_html: yes

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# cpdb
+# cpdb R Package
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -16,13 +16,15 @@ intended to researchers in genetic mutations.
 
 Install the package
 
-```{r, eval=FALSE, tidy = TRUE, size="tiny"}
+``` r
 library(devtools)
 devtools::install_github("karlapenag/cpdb", build_vignettes = TRUE)
 ```
 
-```{r setup}
+``` r
 library(cpdb)
+#> Warning: replacing previous import 'ggplot2::last_plot' by 'plotly::last_plot'
+#> when loading 'cpdb'
 ```
 
 ## `get_contacts()` function
@@ -47,10 +49,18 @@ returns a ´plot´ of the closest residues to the target residue.
 
 ### Example
 
-```{r}
+``` r
 get_contacts("4q21", "A", 15, 6)
+#>   Note: Accessing on-line PDB file
+#> [1] "The residue contacts positions are:"
+#> [1] 13 14 16 17 18 19
 ```
 
-```{r}
+``` r
 plot_closest("4q21", "A", 15, 8)
+#>   Note: Accessing on-line PDB file
+#> Warning in get.pdb(file, path = tempdir(), verbose = FALSE): /var/folders/mk/
+#> flrx70c914z_hflv_j2q0d8h0000gn/T//Rtmpzlnxe1/4q21.pdb exists. Skipping download
 ```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
