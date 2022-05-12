@@ -3,7 +3,7 @@ pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   myvignette: myvignette.html
-last_built: 2022-05-12T03:11Z
+last_built: 2022-05-12T03:30Z
 urls:
   reference: https://karlapenag.github.io/cpdb/reference
   article: https://karlapenag.github.io/cpdb/articles

@@ -2,8 +2,9 @@ Type: Package
 Package: cpdb
 Title: Get residue contacts
 Version: 0.1.0
-Author: Karla Angélica Peña Guerra
-Maintainer: <karla.penaguerra@kaust.edu.sa>
+Authors@R: 
+    person("Karla", "Peña", , "karla.penaguerra@kaust.edu.sa", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-1445-994X"))
 Description: This R package allows the user to get the intramolecular contacts of a specific residue from a solved PDB protein structure. Its use is intended to researchers in genetic mutations.
 License: MIT + file LICENSE
 Imports: 
