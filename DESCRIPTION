@@ -1,0 +1,21 @@
+Type: Package
+Package: cpdb
+Title: Get residue contacts
+Version: 0.1.0
+Author: Karla Angélica Peña Guerra
+Maintainer: <karla.penaguerra@kaust.edu.sa>
+Description: Get residue contacts positions for a solved structure in PDB. Includes other functions to manipulate PDBs. Uses 'bio3d' package as an interface with PDB.
+    spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Imports: 
+    bio3d,
+    dplyr,
+    ggplot2,
+    plotly
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
