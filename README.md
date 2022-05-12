@@ -23,9 +23,11 @@ devtools::install_github("karlapenag/cpdb", build_vignettes = TRUE)
 
 ``` r
 library(cpdb)
-#> Warning: replacing previous import 'ggplot2::last_plot' by 'plotly::last_plot'
-#> when loading 'cpdb'
+library(hexSticker)
+library(ggplot2)
 ```
+
+<img src="inst/figures/cpdb.png" height="300"/>
 
 ## `get_contacts()` function
 
@@ -59,8 +61,6 @@ get_contacts("4q21", "A", 15, 6)
 ``` r
 plot_closest("4q21", "A", 15, 8)
 #>   Note: Accessing on-line PDB file
-#> Warning in get.pdb(file, path = tempdir(), verbose = FALSE): /var/folders/mk/
-#> flrx70c914z_hflv_j2q0d8h0000gn/T//Rtmpzlnxe1/4q21.pdb exists. Skipping download
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

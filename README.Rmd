@@ -22,6 +22,7 @@ knitr::opts_chunk$set(
 ## Description
 This R package allows the user to get the intramolecular contacts of a specific residue from a solved PDB protein structure. Its use is intended to researchers in genetic mutations.
 
+
 ## Installation
 Install the package
 
@@ -32,7 +33,19 @@ devtools::install_github("karlapenag/cpdb", build_vignettes = TRUE)
 
 ```{r setup}
 library(cpdb)
+library(hexSticker)
+library(ggplot2)
 ```
+
+``` {r, echo = FALSE}
+p <- ggplot(aes(x = mpg, y = wt), data = mtcars) + geom_point()
+p <- p + theme_void() + theme_transparent()
+
+sticker(p, package="cpdb", p_size=20, s_x=1, s_y=.75, s_width=1.3, s_height=1, h_fill="#f3125d", h_color="#c5e4ed",
+        filename="inst/figures/cpdb.png")
+```
+
+<img src="inst/figures/cpdb.png" height="300"/>
 
 ## `get_contacts()` function
 
@@ -60,7 +73,7 @@ returns a ´plot´ of the closest residues to the target residue.
 get_contacts("4q21", "A", 15, 6)
 ```
 
-```{r}
+```{r, warning = FALSE}
 plot_closest("4q21", "A", 15, 8)
 ```
 
