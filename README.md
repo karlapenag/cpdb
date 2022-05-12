@@ -16,10 +16,14 @@ intended to researchers in genetic mutations.
 
 Install the package
 
-library(devtools) devtools::install_github(“karlapenag/cpdb”,
-build_vignettes = TRUE)
+```{r, eval=FALSE, tidy = TRUE, size="tiny"}
+library(devtools)
+devtools::install_github("karlapenag/cpdb", build_vignettes = TRUE)
+```
 
+```{r setup}
 library(cpdb)
+```
 
 ## `get_contacts()` function
 
@@ -43,6 +47,10 @@ returns a ´plot´ of the closest residues to the target residue.
 
 ### Example
 
-`get_contacts("4q21", "A", 15, 6)`
+```{r}
+get_contacts("4q21", "A", 15, 6)
+```
 
-`plot_closest("4q21", "A", 15, 8)`
+```{r}
+plot_closest("4q21", "A", 15, 8)
+```
