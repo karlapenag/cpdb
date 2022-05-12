@@ -14,7 +14,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# cpdb R Package
+# cpdb R Package <img src="inst/figures/cpdb.png" align="right" height="139" />
+
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -35,14 +36,6 @@ devtools::install_github("karlapenag/cpdb", build_vignettes = TRUE)
 library(cpdb)
 library(hexSticker)
 library(ggplot2)
-```
-
-``` {r, echo = FALSE}
-p <- ggplot(aes(x = mpg, y = wt), data = mtcars) + geom_point()
-p <- p + theme_void() + theme_transparent()
-
-sticker(p, package="cpdb", p_size=20, s_x=1, s_y=.75, s_width=1.3, s_height=1, h_fill="#f3125d", h_color="#c5e4ed",
-        filename="inst/figures/cpdb.png")
 ```
 
 <img src="inst/figures/cpdb.png" height="300"/>

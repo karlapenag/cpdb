@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# cpdb R Package
+# cpdb R Package <img src="inst/figures/cpdb.png" align="right" height="139" />
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -63,4 +63,4 @@ plot_closest("4q21", "A", 15, 8)
 #>   Note: Accessing on-line PDB file
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
