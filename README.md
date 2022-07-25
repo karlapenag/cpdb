@@ -8,9 +8,9 @@
 
 ## Description
 
-This R package allows the user to get the intramolecular contacts of a
+This R package allows the user to retrieve intramolecular contacts of a
 specific residue from a solved PDB protein structure. Its use is
-intended to researchers in genetic mutations.
+intended for researchers in genetic mutations.
 
 ## Installation
 
