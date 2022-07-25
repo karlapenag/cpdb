@@ -41,7 +41,7 @@ returns a `text` with the residue contacts.
 
 ## `plot_closest()` function
 
-This function has the same four arguments,`pdb`, `chain`, `res` and `a`.
+This function has the same four arguments:`pdb`, `chain`, `res` and `a`.
 
 `pdb` and `chain` have to be `strings`. The default for `chain` is
 `"A"`. `res` is the position number of the residue in the protein
