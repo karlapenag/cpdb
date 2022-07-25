@@ -31,7 +31,7 @@ library(ggplot2)
 
 ## `get_contacts()` function
 
-This function has four arguments,`pdb`, `chain`, `res` and `a`.
+This function has four arguments:`pdb`, `chain`, `res` and `a`.
 
 `pdb` and `chain` have to be `strings`. The default for `chain` is
 `"A"`. `res` is the position number of the residue in the protein
@@ -47,7 +47,7 @@ This function has the same four arguments:`pdb`, `chain`, `res` and `a`.
 `"A"`. `res` is the position number of the residue in the protein
 sequence. `a` is the distance in angstroms. Default = `8`.
 
-returns a ´plot´ of the closest residues to the target residue.
+returns a `plot` of the closest residues to the target residue.
 
 ### Example
 
