@@ -37,7 +37,7 @@ This function has four arguments:`pdb`, `chain`, `res` and `a`.
 `"A"`. `res` is the position number of the residue in the protein
 sequence. `a` is the distance in angstroms. Default = `8`.
 
-returns a `text` with the residue contacts.
+returns a `string` with the residue contacts.
 
 ## `plot_closest()` function
 
